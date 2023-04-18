@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatefulWidget {
-  const SecondScreen({Key? key}) : super(key: key);
+  const SecondScreen({super.key}) ;
 
   @override
   State<SecondScreen> createState() => _SecondScreenState();
@@ -10,6 +10,7 @@ class SecondScreen extends StatefulWidget {
 class _SecondScreenState extends State<SecondScreen> {
   Color color1 = Colors.black;
   Color color2 = Colors.yellow;
+  final spacer = const SizedBox(height: 30);
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,7 @@ class _SecondScreenState extends State<SecondScreen> {
               )
             ],
           ),
-          const SizedBox(height: 30),
+           spacer,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[

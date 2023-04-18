@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_1/presentation/second_screen.dart';
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  const FirstScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
